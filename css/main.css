@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+.hidden
+{
+	display:none;
+}
+
+div,p,body,header,footer,section,article,nav,h1,h2,h3,h4 
+{ 
+margin: 0; 
+padding: 0; 
+} 
+
+img 
+{ 
+border: none; 
+margin: 0; 
+padding: 0; 
+}
+
+body 
+{
+  font-family: "Gaudi Old Style";
+  font-size: 14px;
+  color: #000;
+  /*http://www.heropatterns.com/*/
+  /*background-image: url(../images/bckgrd.jpg) no-repeat bottom;*/
+  background-color: #ededed;
+ }
+
+ a:link, a:visited { 
+text-decoration:none; 
+}
+
+a:hover, a:active { 
+text-decoration:none; 
+ }
+.container
+{
+  width: 960px;
+  margin: 0 auto;
+/*  background-color: #fff;*/
+  background-image: url(../images/bckgrd.jpg) no-repeat bottom;
+}
+.mainHeader 
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start
+}
+.logoHeader
+{
+  width: 234px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.mainNav
+{
+  width: 500px;
+  height: 25px;
+  margin-top: 45px;
+  margin-left: auto;
+}
+
+.mainNav ul
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+.mainNav ul li 
+{  
+  font-size: 26px;
+  display: inline;
+  margin-left: 25px;
+}
+
+.mainNav ul li a
+{
+  color: #000;
+  padding: 5px;
+}
+
+.mainNav ul li a:hover 
+{
+  padding: 5px;
+  text-decoration: underline;
+  background-color: #4f557a;
+}
+
+
+/*.selected
+{
+  padding: 5px 0px 5px 0px;
+  background-color: #4f557a;
+}*/
+.mainPic
+{
+  height: 250px;
+  width: 600px;
+  background: url(../images/main_pic.jpg) no-repeat bottom; 
+  position: relative; /*set to relative to anything that uses absolute inside will positioned to the top left corner of this element*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
