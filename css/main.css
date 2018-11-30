@@ -22,8 +22,8 @@ padding: 0;
 body 
 {
   font-family: "Gaudi Old Style";
-  font-size: 14px;
-  color: #000;
+  /*font-size: 14px;
+  color: #000;*/
   /*http://www.heropatterns.com/*/
   /*background-image: url(../images/bckgrd.jpg) no-repeat bottom;*/
   background-color: #dedede;
@@ -62,19 +62,18 @@ text-decoration:none;
 }
 .navForm
 {
-  display: flex;
+ /* display: flex;*/
   flex-direction: column;
   /*align-items: flex-end;*/
   margin-left: 10px;
 }
 .mainNav
 {
-  width: 500px;
+  width: 525px;
   height: 25px;
   margin-top: 100px;
   margin-left: auto;
-  /*background-color: green;*/
-  /*position: relative;*/
+  
 
 }
 
@@ -86,7 +85,7 @@ text-decoration:none;
 
 .mainNav ul li 
 {  
-  font-size: 22px;
+  font-size: 24px;
   display: inline;
   margin-left: 25px;
   margin-top: 0px;
@@ -112,7 +111,8 @@ text-decoration:none;
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-right: 30px;
   align-items: center;
 
  /* background-color: red;*/
@@ -125,9 +125,9 @@ text-decoration:none;
 }
 
 
-#mainSearch label
+#mainSearch 
 {
-  font-size: 25px;
+  /*font-size: 40px;
   margin-top: 35px;
   margin-bottom: 20px;
   padding: 10px;
@@ -137,14 +137,16 @@ text-decoration:none;
   display: block;
   border: 1px solid #999;
   color: #333;
-  margin-right: 20px;
+  margin-right: 20px;*/
   /*position: inline;*/
   /*margin-top: 20px;
   margin-right:36px;
   background-color: grey;*/
   font-family: "Gaudi Old Style";
   right: 20px;
-  font-size: 16px;
+  font-size: 22px;
+  color: #000c55;
+  margin-left: 5px;
   
  }
 
@@ -191,7 +193,7 @@ text-decoration:none;
 .mainText p
 {
 font-size: 20px;
-color:grey;
+color:#373737;
 line-height: 20px;
 letter-spacing: 2px;
 text-align: center;
@@ -413,26 +415,25 @@ margin-top: 20px;
 {
   color: #fff;
   font-size: 15px;
-  letter-spacing: -1px;
+  letter-spacing: 1.5px;
   text-align: center;
 }
-.mainContact h2
+/*.mainContact h2
 {
   color: #fff;
   font-size: 31px;
   letter-spacing: -1px;
   text-align: center;
-}
+}*/
 
 
 #mainContact
 {
-  width: 960px;
+  max-width: 960px;
  /* padding-top: 20px;*/
- margin-top: 10px;
-  margin-left: auto;
+  margin-top: 10px;
   padding-right: 20px;
-  margin-left: 80px;
+  margin-left: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -441,12 +442,14 @@ margin-top: 20px;
 
 #mainContact h2
 {
-  
-  font-size: 30px;
   color: #000c55;
-  /*margin-bottom: 40px;*/
-  /*padding: 8px 0px 8px 5px;*/
   width: 940px;
+  margin-left: 30px;
+  font-size: 31px;
+ /* letter-spacing: -1px;*/
+  /*text-align: center;*/
+  margin-bottom: 0px;
+
 }
 
 #contactArea 
@@ -457,18 +460,42 @@ margin-top: 20px;
 }
 
 
-#contactText 
-{
-  font-size: 10px;
-  margin-bottom: 15px;
-  width: 340px;
-}
 
 #contactForm
 {
   margin-top: 20px;
 }
+#contactText 
+{
+  font-size: 16px;
+  margin-top: auto;
+  margin-bottom: 15px;
+  width: 340px;
+  font-size: 16px;
+  margin-top: 10px;
+  color: #373737;
+}
 
+.name 
+{
+color: #000c55;
+font-size:18px;
+}
+.email
+{
+  color: #000c55;
+font-size:18px;
+}
+.phoneRequired
+{
+  color: #000c55;
+font-size:18px;
+}
+.comments
+{
+  color: #000c55;
+font-size:18px;
+}
 
 input, textarea  
 {
@@ -483,6 +510,7 @@ input, textarea
   border: 1px solid #999;
   color: #333;
   margin-right: 20px;
+  color: #000c55;
 }
 
 #comments
@@ -514,6 +542,11 @@ input, textarea
   margin-left: 30px;
 }
 
+#mapAreaContact
+{
+  display: grid;
+  grid-template-columns: auto auto;
+}
 
 #mapArea h3
 {
@@ -521,9 +554,25 @@ input, textarea
   margin-top: 0;
   color: #000c55;
 }
-.adsress .phone
+ul li
 {
-color: #000c55
+color: #373737;
+}
+
+.address
+{
+  color: #000c55; 
+  font-size: 18px;
+}
+.phone 
+{
+  color: #000c55; 
+  font-size: 18px;
+}
+.fax 
+{
+  color: #000c55; 
+  font-size: 18px;
 }
 
 #mapArea ul
@@ -545,6 +594,7 @@ color: #000c55
 {
   text-align: center;
   margin-top: auto;
+  color: #000c55;
 }
 .middlesexG 
 {
@@ -557,12 +607,15 @@ color: #000c55
   border-color: #373737;
 
 }
-.middlesex1926
+.middlesex1926 p
 {
  display: flex;
  flex-direction: column;
  justify-content: space-between;
  align-items: center;
+ font-size: 18px;
+ color: #000c55;
+ font-weight: bold;
 }
 
 .middlesexInfo 
@@ -574,21 +627,25 @@ color: #000c55
   height: 203px;
   /*background-color: green;*/
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   padding-top: 0px;
 }
 .middlesexInfo p
 {
   margin-top: 0px;
   text-indent: 35px;
+  color: #373737;
 }
 
-.middlesex2018
+.middlesex2018 p
 {
   display: flex;
  flex-direction: column;
  justify-content: flex-start;
  align-items: center;
+ font-size: 18px;
+ color: #000c55;
+  font-weight: bold;
 }
 
 .westernG
@@ -599,13 +656,20 @@ color: #000c55
   margin-bottom: 0px;
   border-bottom: solid 1px;
 }
+.westernTittle
+{
+  color: #000c55;
+}
 
-.western1924
+.western1924 p
 {
   display: flex;
  flex-direction: column;
  justify-content: space-between;
  align-items: center;
+ font-size: 18px;
+ color: #000c55;
+  font-weight: bold;
 }
 .westernInfo
 {
@@ -616,22 +680,30 @@ color: #000c55
   height: 203px;
  /* background-color: red;*/
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .westernInfo p
 {
   margin-top: 0px;
   text-indent: 40px;
+  color: #373737;
 }
-.western2018
+.western2018 p
 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  font-size: 18px;
+ color: #000c55;
+  font-weight: bold;
 }
 
+.basilicaTittle
+{
+  color: #000c55;
+}
 .basilicaG
 {
   display: flex;
@@ -639,12 +711,15 @@ color: #000c55
   justify-content: space-evenly;
 }
 
-.basilica1931
+.basilica1931 p
 {
  display: flex;
  flex-direction: column;
  justify-content: space-between;
  align-items: center;
+ font-size: 18px;
+ font-weight: bold;
+ color: #000c55;
 }
 .basilicaInfo
 {
@@ -655,19 +730,23 @@ color: #000c55
   height: 203px;
   /*background-color: blue;*/
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
+  color: #373737;
 }
 .basilicaInfo p
 {
   margin-top: auto;
   text-indent: 40px;
 }
-.basilica2018
+.basilica2018 p
 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  font-size: 18px;
+ color: #000c55;
+  font-weight: bold;
 }
 
 

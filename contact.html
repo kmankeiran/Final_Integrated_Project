@@ -39,17 +39,17 @@
                 <h2 class="hidden">Contact form</h2>
                 <p id="contactText">If you have any <br>questions, feel free<br>to leave a comment down below</p> 
             <form id="contactForm" action="form.php" method="post">
-                    <label for="name">Name: (required)</label>
+                    <label class="name" for="name">Name: (required)</label>
                     <input type="text" required id="name" name="fullName" size="30" placeholder="Enter your name">
                     
-                    <label for="email">Email: (will not be published)</label>
+                    <label class="email" for="email">Email: (will not be published)</label>
                     <input type="email" required id="email" size="30" placeholder="Enter your Email">
                     
                     
-                    <label for="phone">Phone: (required)</label>
+                    <label class="phoneRequired" for="phone">Phone: (required)</label>
                     <input type="tel" required id="phone" size="30" placeholder="Enter Phone Number">
                     
-                    <label for="comments">Comments:</label>
+                    <label class="comments" for="comments">Comments:</label>
                     <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
                    
                     <input id="submit" type="submit" value="Submit">
@@ -57,21 +57,27 @@
         	</section> 
             
             <section id="mapArea">
-            	<h3>Our contacts</h3>
+              <h3>Our contacts</h3>
+              
+              <div id="mapAreaContact">
+                
                 <ul>
-                	<li class="address">Mailing Address: </li>
-					<li>251 Dundas St.</li>
-					<li>London, Ontario</li>
-					<li>N6A 6H9</li>
-					<li>Canada</li>
+                	<li class="address">Mailing Address:</li>
+                  <li>251 Dundas St.</li>
+                  <li>London, Ontario</li>
+                  <li>N6A 6H9</li>
+                  <li>Canada</li>
                 </ul>
                 
                  <ul>
                 	<li class="phone">Phone</li>
-					<li>519-661-4600</li>
-					<li class="fax">Fax</li>
-					<li>519-663-9013</li>
-                </ul>    
+                  <li>519-661-4600</li>
+                  <li class="fax">Fax</li>
+                  <li>519-663-9013</li>
+                </ul>
+
+                </div>   
+                 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.7067837891786!2d-81.24853538443212!3d42.984449903432974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef18a6b73ed7f%3A0x570f72a4737585d6!2s251+Dundas+St%2C+London%2C+ON+N6A+6H9!5e0!3m2!1sen!2sca!4v1543208381100" width="302" height="198" frameborder="0" style="border:0" allowfullscreen></iframe>
             </section>      
         </section>
